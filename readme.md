@@ -5,7 +5,7 @@ A web application that allows users to search for any GitHub username and view t
 
 ## 📸 Preview
 
-![Preview Screenshot](screenshot.png)
+![Preview Screenshot](Screenshot.png)
 
 ---
 
@@ -36,5 +36,5 @@ A web application that allows users to search for any GitHub username and view t
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/github-profile-viewer.git
-cd github-profile-viewer
+git clone https://github.com/GitAbdalla/GithubFinder.git
+
