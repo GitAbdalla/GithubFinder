@@ -1,7 +1,5 @@
 require("dotenv").config();
 const cors = require("cors");
-
-
 const express = require("express");
 
 const app = express();
@@ -30,10 +28,6 @@ app.get("/github-user/:username", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
-
 app.get("/github-user/:username/repos", async (req, res) => {
   const username = req.params.username;
 
@@ -57,4 +51,8 @@ app.get("/github-user/:username/repos", async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
   }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
